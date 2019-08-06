@@ -74,18 +74,24 @@ function displayInfo(d){
 
 function finish(){
 	var select = document.getElementById('results');
-	for(var i = 0; i < select.options.length; i++){
-		select.options[i] = null;
+	while(select.length>0){
+		select.remove(select[0]);
 	}
-	for(var i = 0; i < options.length; i++){
-		select.options[i] = new Option(options[i].fullname + " " + options[i].year + "\n", options[i].pos);
-
+	if(options.length>0){
+		for(var i = 0; i < options.length; i++){
+			select.options[i] = new Option(options[i].fullname + " " + options[i].year + "\n", options[i].pos);
+		}
+	} else {
+		select.options[0] = new Option("No brick found, press 'Go' for more information", "err");
 	}
 	document.getElementById('results').options[0].selected = true;
 }
 
 function processDisplay(evt){
 	var proVal = document.getElementById('results').value;
+	if(proVal === "err"){
+		document.getElementById('directions').innerHTML = "Information goes here"
+	}
 	listBackup.forEach(function(value){
 		if(value.pos === proVal){
 			document.getElementById('brickFname').innerHTML = value.fname;
@@ -200,7 +206,7 @@ function boxdraw(quadrant){
 	 		box.transform = "translate(0px,-5px)";
 	 		break;
 	 	case 2: //2: ABCD #<150 - First Lamp to Second Lamp
-	 		box.transform = "translate(100%,-5px)";
+	 		box.transform = "translate(90%,-5px)";
 	 		break;
 	 	case 3: //3: ABCD #<169 - Second Lamp to Path Start
 	 		box.transform = "translate(200%,-6px)";

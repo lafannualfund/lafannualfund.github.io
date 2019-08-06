@@ -4,22 +4,20 @@
 	<title>Fleck Brick Locator</title>
 	
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Unica One">
-	<link href='https://fonts.googleapis.com/css?family=Staatliches' rel='stylesheet'>
-	<link href='https://fonts.googleapis.com/css?family=Crushed' rel='stylesheet'>
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<script type="text/javascript" src="dataLoad.js"></script>
-	<base href="http://github.com/elast27/elast27.github.io">
+	<base href="file:///C:/Users/Eric/Desktop/Lafayette/Fleck Internship/fleckBrick/"/>
 	
 	<p id="heading"><strong>Fleck Consistent Giving Society Brick Locator</strong></p>
 	<form id="topsearch" autocomplete="off" onkeydown="return event.key != 'Enter'">
 		<div class="dropdown">
-			<input type="text" name="searchbar" id="searchbar" placeholder="Search for a Brick by First or Last Name">
+			<input type="search" name="searchbar" id="searchbar" placeholder="Search for a Brick by First or Last Name">
 			<select id="results"></select>
 			<button type="button" onclick="processDisplay()">Go</button>
 		</div>
 	</form>
 	<div class="photoLayover">
-		<img id="view" src="campus-view.PNG" alt="Brick Map">
+		<img id="view" src="campus-view.png" alt="Brick Map">
 		<div id="locator"></div>
 		<div class="container" id="brickRender">
 			<img id = "render" src="brick template.jpg">
@@ -36,7 +34,6 @@
     <script type="text/javascript">
     	var fileInput = document.getElementById('fileinput');
     	fileInput.addEventListener('change', readSingleFile, false);
-    	//fileInput.dispatchEvent(event);
     	document.getElementById('searchbar').addEventListener('keyup', search, false);
     </script>
     <textarea rows=20 id="area"></textarea>
