@@ -7,10 +7,7 @@
 body{
 	background: linear-gradient(to bottom, #800000 0%, #ffffff 100%);
 	background-repeat: no-repeat;
-}
-
-textarea{
-	resize: none;
+	max-width: 100%;
 }
 
 #searchbar{
@@ -22,10 +19,7 @@ textarea{
 
 #brickRender{
 	display: none;
-}
-
-#area{
-	display: none;
+	size: auto;
 }
 
 .container {
