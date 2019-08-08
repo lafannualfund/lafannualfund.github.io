@@ -227,7 +227,10 @@ function boxdraw(quadrant){
 	 		box.transform = "translate(0px,4px)";
 	 		break;
 	 	case 15: //15: IJ #>160 - Two Trees to End
-	 		box.transform = "translate(815%,-350%) rotate(-60deg)";
+	 		//box.transform = "translate(815%,-350%) rotate(-60deg)";
+	 		box.top = "66%";
+	 		box.left = "46%";
+	 		box.transform = "rotate(-60deg)";
 	 		break;
 	 	default: 
 	 }

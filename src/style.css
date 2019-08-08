@@ -21,6 +21,11 @@ body{
 	display: none;
 }
 
+.box{
+	position:absolute;
+	background-size: contain;
+}
+
 .render{
 	width: 25vw;
 }
