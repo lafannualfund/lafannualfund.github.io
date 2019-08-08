@@ -99,29 +99,29 @@ function generateDirections(pos){
 	if(row === 'A' || row === 'B' || row === 'C' || row === 'D' ){
 		if(row === 'A' || row === 'D') inOut = "outer row";
 		else inOut = "inner row";
-		if(num <= 796){ 
+		if(num < 796){ 
 			if(row ===  'A' || row === 'B') onThe = "right, ";
 			else onThe = 'left, ';
 			leftRight = "left, down the straight path towards Markle Hall. ";
-			if(num<=8) {
+			if(num< 8) {
 				quadrant = 1;
 				enhanced = "Continue all the way down, close to High Street. The brick is located between the road and the light pole";
-			} else if(num<=150){
+			} else if(num< 150){
 				quadrant = 2;
 				enhanced = "Continue past four light poles. The brick is located between the fourth and fifth light pole";
-			} else if(num<=169){
+			} else if(num< 169){
 				quadrant = 3;
-				enhanced = "Continue until you reach the intersecting path. The brick is located between the path and the next light pole";
-			} else if(num<=227){
+				enhanced = "Continue until you reach the intersecting path. The brick is located between the end of the path and the next light pole";
+			} else if(num< 227){
 				quadrant = 4;
 				enhanced = "Continue until you reach the intersecting path. The brick is located directly upon the intersection";
-			} else if(num<=327) {
+			} else if(num< 327) {
 				quadrant = 5;
 				enhanced = "Continue past three light poles. The brick is located between the third light pole and the intersecting path";
-			} else if(num<=508) {
+			} else if(num< 508) {
 				quadrant = 6;
 				enhanced = "Continue past two light poles. The brick is located between the second and third light pole";
-			} else if(num<=690) {
+			} else if(num< 690) {
 				quadrant = 7;
 				enhanced = "Continue to the first light pole. The brick is located between the first and second light pole";
 			} else {
@@ -132,7 +132,7 @@ function generateDirections(pos){
 			if(row ===  'A' || row === 'B') onThe = "left, ";
 			else onThe = 'right, ';
 		 	leftRight = "right, down the straight path towards Colton Chapel. ";
-		 	if(num<=914) {
+		 	if(num< 914) {
 		 		quadrant = 9;
 		 		enhanced = "The brick is located before the first light pole";
 		 	} else {
@@ -148,10 +148,10 @@ function generateDirections(pos){
 		leftRight = "left and up the path that goes towards Kirby House. ";
 		if(row === 'E' || row === 'F') onThe = "left, ";
 		else onThe = "right, ";
-		if(num<=115) {
+		if(num< 115) {
 			quadrant = 11;
 			enhanced = "The brick is located between the first two light poles";
-		} else if(num<=280) {
+		} else if(num< 280) {
 			quadrant = 12;
 			enhanced = "Continue past the second light pole on your left. The brick is located between the second and third light pole";
 		} else {
@@ -164,7 +164,7 @@ function generateDirections(pos){
 		else onThe = "right";
 		leftRight = "right and up the curved path that goes towards Pardee Hall. ";
 		inOut = "";
-		if(num<=160) {
+		if(num< 160) {
 			quadrant = 14;
 			enhanced = "The brick is located before the two trees that are situated on either side of the path";
 		} else {
@@ -180,51 +180,77 @@ function generateDirections(pos){
 function boxdraw(quadrant){
 	var box = document.getElementById('locator').style;
 	box.display = "initial";
+	box.width = "5%";
 	box.transform = "rotate(initial)";
 	box.transform = "translate(0px,0px)"
 	switch(quadrant){
 	 	case 1: //1: ABCD #<8 - High Street to First Lamp
-	 		box.transform = "translate(0px,-5px)";
+	 		box.top = "92%";
+	 		box.left = "0.3%";
+	 		box.width = "3%";
 	 		break;
 	 	case 2: //2: ABCD #<150 - First Lamp to Second Lamp
-	 		box.transform = "translate(90%,-5px)";
+	 		box.top = "92%";
+	 		box.left = "4%";
+	 		box.width = "5%";
 	 		break;
 	 	case 3: //3: ABCD #<169 - Second Lamp to Path Start
-	 		box.transform = "translate(200%,-6px)";
+	 		box.top = "92%";
+	 		box.left = "10%";
+	 		box.width = "1%";
 	 		break;
 	 	case 4: //4: ABCD #<227 - Path Start to Path End
-	 		box.transform = "translate(300%,-6px)";
+	 		box.top = "92%";
+	 		box.left = "11%";
+	 		box.width = "2%";
 	 		break;
 	 	case 5: //5: ABCD #<327 - Path End to Third Lamp
-	 		box.transform = "translate(220%,-7px)";
-	 		box.width = "50%";
+	 		box.top = "92%";
+	 		box.left = "13%";
+	 		box.width = "4%";
 	 		break;
 	 	case 6: //6: ABCD #<508 - Third Lamp to Fourth Lamp 
-	 		box.transform = "translate(500%,-7px)";
+	 		box.top = "92%";
+	 		box.left = "17%";
+	 		box.width = "6%";
 	 		break;
 	 	case 7: //7: ABCD #<690 - Fourth Lamp to Fifth Lamp
-	 		box.transform = "translate(500%,-7px)";
+	 		box.top = "92%";
+	 		box.left = "24%";
+	 		box.width = "6%";
 	 		break;
 	 	case 8: //8: ABCD #<796 - Fifth Lamp to end of Left Section
-	 		box.transform = "translate(600%,-8px)";
+	 		box.top = "92%";
+	 		box.left = "30%";
+	 		box.width = "2%"
 	 		break;
-	 	case 9: //9: ABCD #<914 - Start of Rigth Section to Lamp
-	 		box.transform = "translate(780%,-8px)";
+	 	case 9: //9: ABCD #<914 - Start of Right Section to Lamp
+	 		box.top = "91%";
+	 		box.left = "45%";
 	 		break;
 	 	case 10: //10: ABCD #>914 - Lamp to End
-	 		box.transform = "translate(900%,-8px)";
+	 		box.top = "91%";
+	 		box.left = "53%";
 	 		break;
 	 	case 11: //11: EFGH #<115 - Start to First Lamp
-	 		box.transform = "translate(0px,-8px)";
+	 		box.top = "85%";
+	 		box.left = "28%";
+	 		box.transform = "rotate(42deg)";
 	 		break;
 	 	case 12: //12: EFGH #<280 - First Lamp to Second Lamp
-	 		box.transform = "translate(0px,-8px)";
+	 		box.top = "74%";
+	 		box.left = "25%";
+	 		box.transform = "rotate(70deg)";
 	 		break;
 	 	case 13: //13: EFGH #>280 - Second Lamp to End
-	 		box.transform = "translate(0px,4px)";
+	 		box.top = "60%";
+	 		box.left = "23%";
+	 		box.transform = "rotate(78deg)";
 	 		break;
 	 	case 14: //14: IJ #<160 - Start to Two Trees
-	 		box.transform = "translate(0px,4px)";
+	 		box.top = "83%";
+	 		box.left = "42%";
+	 		box.transform = "rotate(-50deg)";
 	 		break;
 	 	case 15: //15: IJ #>160 - Two Trees to End
 	 		//box.transform = "translate(815%,-350%) rotate(-60deg)";
