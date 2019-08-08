@@ -19,7 +19,10 @@ body{
 
 #brickRender{
 	display: none;
-	size: auto;
+}
+
+.render{
+	width: 25vw;
 }
 
 .container {
