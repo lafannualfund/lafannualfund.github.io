@@ -71,7 +71,12 @@ function finish(){
 function processDisplay(evt){
 	var proVal = document.getElementById('results').value;
 	if(proVal === "err"){
-		document.getElementById('directions').innerHTML = "Information goes here"
+		document.getElementById('brickFname').innerHTML = "YOUR";
+		document.getElementById('brickLname').innerHTML = "NAME";
+		document.getElementById('brickYear').innerHTML = "HERE";
+		document.getElementById('brickRender').style.display = "initial";
+		document.getElementById('directions').innerHTML = "No brick found.";
+		document.getElementById('linkone').innerHTML = "Click here to contact us";
 	}
 	listBackup.forEach(function(value){
 		if(value.pos === proVal){
