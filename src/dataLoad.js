@@ -69,6 +69,7 @@ function finish(){
 }
 
 function processDisplay(evt){
+	document.getElementById('linkone').style.display = "none";
 	var proVal = document.getElementById('results').value;
 	if(proVal === "err"){
 		document.getElementById('brickFname').innerHTML = "YOUR";
