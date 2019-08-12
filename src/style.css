@@ -69,6 +69,15 @@ body{
 	text-align: left;
 	padding-left: 10px;
 }
+.maillink{
+	position: absolute;
+	word-wrap: normal;
+	top: 100%;
+	font-size: 0.5em;
+	font-family: "Arial";
+	text-align: left;
+	padding-left: 10px;
+}
 
 .photoLayover{
 	position: relative;
