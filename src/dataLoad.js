@@ -77,8 +77,9 @@ function processDisplay(evt){
 		document.getElementById('brickYear').innerHTML = "HERE";
 		document.getElementById('brickRender').style.display = "initial";
 		document.getElementById('linkone').style.display = "initial";
-		document.getElementById('directions').innerHTML = "No brick found.";
+		document.getElementById('directions').innerHTML = "";
 		document.getElementById('linkone').innerHTML = "Click here to contact us";
+		document.getElementById('locator').style.display = "none";
 	}
 	listBackup.forEach(function(value){
 		if(value.pos === proVal){
