@@ -79,6 +79,16 @@ body{
 	padding-left: 10px;
 }
 
+.contact{
+	position: absolute;
+	word-wrap: normal;
+	top: 250%;
+	font-size: 0.3em;
+	font-family: "Arial";
+	text-align: left;
+	padding-left: 10px;
+}
+
 .photoLayover{
 	position: relative;
 	padding-top: 5px;
@@ -102,4 +112,12 @@ body{
 	left: 0px;
 	display: none;
 	transform: translate(rotate(0deg));
+}
+#footer{
+	text-align: center;
+	color: black;
+}
+#credits{
+	text-align: center;
+	color: black;
 }
