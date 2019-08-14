@@ -59,9 +59,11 @@ function finish(){
 		select.remove(select[0]);
 	}
 	if(options.length>0){
-		for(var i = 0; i < options.length; i++){
+		var i = 0;
+		for(i; i < options.length; i++){
 			select.options[i] = new Option(options[i].fullname + " " + options[i].year + "\n", options[i].pos);
 		}
+		select.options[i] = new Option("Name Not Listed", "err");
 	} else {
 		select.options[0] = new Option("No brick found, press 'Go' for more information", "err");
 	}
@@ -104,6 +106,7 @@ function generateDirections(pos){
 	var leftRight;
 	var enhanced;
 	var quadrant;
+	//Directions count light poles from the steps of Skillman Library
 	if(row === 'A' || row === 'B' || row === 'C' || row === 'D' ){
 		if(row === 'A' || row === 'D') inOut = "outer row";
 		else inOut = "inner row";
@@ -191,6 +194,7 @@ function boxdraw(quadrant){
 	box.width = "5%";
 	box.transform = "rotate(initial)";
 	box.transform = "translate(0px,0px)"
+	//These quadrants count light poles starting from High Street
 	switch(quadrant){
 	 	case 1: //1: ABCD #<8 - High Street to First Lamp
 	 		box.top = "92%";

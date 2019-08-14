@@ -1,11 +1,25 @@
-#heading{
-	font-family: "Unica One";
-	color: white;
-	font-size: 36px;
+@font-face{
+	font-family: Whitney;
+	src: url("../misc/Whitney-Light.otf") format("opentype");
 }
 
+#heading{
+	font-family: "Whitney";
+	color: white;
+	font-size: 36px;
+	margin: 10px;
+}
+
+#laflogo{
+	width: 20%;
+	height: auto;
+	position: absolute;
+	right: 10px;
+	bottom: 10px;
+}
 body{
-	background: linear-gradient(to bottom, #800000 0%, #ffffff 100%);
+	/*background: linear-gradient(to bottom, #65001C 0%, #FFFFFF 100%);*/
+	background: #65001C;
 	background-repeat: no-repeat;
 	max-width: 100%;
 }
@@ -44,6 +58,7 @@ body{
 	top: 25%;
 	left: 50%;
 	transform: translate(-50%, -50%);
+	white-space: nowrap; 
 }
 
 .centered2 {
@@ -51,6 +66,7 @@ body{
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
+	white-space: nowrap; 
 }
 
 .lower{
@@ -65,16 +81,18 @@ body{
 	word-wrap: normal;
 	top: 100%;
 	font-size: 0.5em;
-	font-family: "Arial";
+	font-family: "Whitney";
 	text-align: left;
 	padding-left: 10px;
+	color: white;
 }
 .maillink{
 	position: absolute;
 	word-wrap: normal;
 	top: 100%;
 	font-size: 0.5em;
-	font-family: "Arial";
+	font-family: "Whitney";
+	color: white;
 	text-align: left;
 	padding-left: 10px;
 }
@@ -84,7 +102,8 @@ body{
 	word-wrap: normal;
 	top: 250%;
 	font-size: 0.3em;
-	font-family: "Arial";
+	font-family: "Whitney";
+	color: white;
 	text-align: left;
 	padding-left: 10px;
 }
@@ -115,9 +134,11 @@ body{
 }
 #footer{
 	text-align: center;
-	color: black;
+	color: white;
+	font-family: "Whitney";
 }
 #credits{
 	text-align: center;
-	color: black;
+	color: white;
+	font-family: "Whitney";
 }
