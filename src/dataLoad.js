@@ -78,7 +78,7 @@ function processDisplay(evt){
 		document.getElementById('brickYear').innerHTML = "Here";
 		document.getElementById('brickRender').style.display = "initial";
 		document.getElementById('directions').innerHTML = "Brick not found.";
-		document.getElementById('contact').innerHTML = "Our records indicate that your support is not yet recognized with a brick on the Quad. Please visit the <a href='https://development.lafayette.edu/donor-recognition/fleck-consistent-giving-society/' style='color: inherit;'>Fleck Society homepage</a> for information on how you may qualify for this recognition, and please contact the Lafayette College Annual Fund if you would like more information about your progress to earn a brick, your donor status and detailed giving history. You may call us at <a href='tel:(610)330-5034' style='color: inherit;'>(610)330-5034</a>, or email us at <a href='mailto:fund@lafayette.edu' style='color: inherit;'>fund@lafayette.edu.</a> Thank you!";
+		document.getElementById('contact').innerHTML = "Our records indicate that your support is not yet recognized with a brick on the Quad. Please visit the <a target='_blank' href='https://development.lafayette.edu/donor-recognition/fleck-consistent-giving-society/' style='color: inherit;'>Fleck Society homepage</a> for information on how you may qualify for this recognition, and please contact the Lafayette College Annual Fund if you would like more information about your progress to earn a brick, your donor status and detailed giving history. You may call us at <a target='_blank' href='tel:(610)330-5034' style='color: inherit;'>(610)330-5034</a>, or email us at <a target='_blank' href='mailto:fund@lafayette.edu' style='color: inherit;'>fund@lafayette.edu.</a> Thank you!";
 		document.getElementById('locator').style.display = "none";
 	}
 	listBackup.forEach(function(value){
@@ -89,13 +89,14 @@ function processDisplay(evt){
 			document.getElementById('brickRender').style.display = "initial";
 			var dir = generateDirections(value.pos);
 			document.getElementById('directions').innerHTML = dir;
-			document.getElementById('contact').innerHTML = "Thank you for being a consistent donor to Lafayette! The College's fiscal year runs from July 1 to June 30 each year. If you have not yet renewed your support, then please <a href='https://securelb.imodules.com/s/1699/interior.aspx?sid=1699&gid=2&pgid=446&cid=1122&appealcode=fleckwebhome' style='color: inherit;'>click here </a>to make your gift today!<br><br>Contact the Lafayette College Annual Fund with any questions about your giving history, current giving status, or with any other questions you may have about the impact of your support. We can also take your contribution over the phone. Call us at <a href='tel:(610)330-5034' style='color: inherit;'>(610)330-5034</a>, or email us at <a href='mailto:fund@lafayette.edu' style='color: inherit;'>fund@lafayette.edu</a>. Thank you!";
+			document.getElementById('contact').innerHTML = "Thank you for being a consistent donor to Lafayette! The College's fiscal year runs from July 1 to June 30 each year. If you have not yet renewed your support, then please <a target='_blank' href='https://securelb.imodules.com/s/1699/interior.aspx?sid=1699&gid=2&pgid=446&cid=1122&appealcode=fleckwebhome' style='color: inherit;'>click here </a>to make your gift today!<br><br>Contact the Lafayette College Annual Fund with any questions about your giving history, current giving status, or with any other questions you may have about the impact of your support. We can also take your contribution over the phone. Call us at <a target='_blank' href='tel:(610)330-5034' style='color: inherit;'>(610)330-5034</a>, or email us at <a target='_blank' href='mailto:fund@lafayette.edu' style='color: inherit;'>fund@lafayette.edu</a>. Thank you!";
 
 			return;
 		}
 	});
 }
 
+/*This method will generate the directions to a brick from the Skill*/
 function generateDirections(pos){
 	var result = "From the steps of Skillman Library, walk ";
 	var str = pos;
