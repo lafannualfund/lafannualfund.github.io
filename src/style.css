@@ -16,11 +16,11 @@
 }
 
 #laflogo{
-	width: 20%;
-	height: auto;
-	position: absolute;
-	right: 10px;
-	bottom: 10px;
+	width: auto;
+	height: 10vh;
+	position: relative;
+	bottom: 40px;
+	left: 83%;
 }
 body{
 	/*background: linear-gradient(to bottom, #65001C 0%, #910029 100%)*/;
@@ -105,7 +105,7 @@ body{
 .contact{
 	position: absolute;
 	word-wrap: normal;
-	top: 250%;
+	top: 210%;
 	font-size: 0.3em;
 	font-family: "Whitney";
 	color: white;
@@ -137,7 +137,7 @@ body{
 	display: none;
 	transform: translate(rotate(0deg));
 }
-#footer{
+.footer{
 	text-align: center;
 	color: white;
 	font-family: "Whitney";
@@ -146,4 +146,10 @@ body{
 	text-align: center;
 	color: white;
 	font-family: "Whitney";
+}
+
+#info{
+	width: 1.5%;
+	height: auto;
+	transform: translate(20%, 40%);
 }

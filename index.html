@@ -13,6 +13,7 @@
 			<input type="search" name="searchbar" id="searchbar" placeholder="Search for a Brick by First or Last Name">
 			<select id="results"></select>
 			<button type="button" onclick="processDisplay()">Go</button>
+			<a id="help" href="help.html"><img id="info" src="img/info.png" title="Click for help"></a>
 		</div>
 	</form>
 </head>
@@ -26,16 +27,18 @@
 			<div class="centered2" id = "brickLname"></div>
 			<div class="lower" id ="brickYear"></div>
 			<div class="directions" id="directions"></div>
-			<div class="maillink" id="maillink"><a id="linkone" href="mailto:fund@lafayette.edu"></a></div>
-			<div class="contact" id="contact">More Text Here</div>
+			<div class="contact" id="contact"></div>
 		</div>
 	</div>
     <script type="text/javascript">
     	readSingleFile();
     	document.getElementById('searchbar').addEventListener('keyup', search, false);
     </script>
-    <div id="footer"> Lafayette College Office of Development and College Relations</div>
+    <div class="footer"> Lafayette College Annual Fund</div>
+    <div class="footer"> <a href="mailto:fund@lafayette.edu" style="color: inherit;">fund@lafayette.edu</a> | <a href="tel:(610)330-5034" style="color: inherit;">(610)330-5034</a></div>
     <div id="credits"> Brick Locator created and developed by Eric Last '20</div>
-    <img id="laflogo" src="img/LAF_Logo_OneLine_White.png">
+    <a href="https://development.lafayette.edu/donor-recognition/fleck-consistent-giving-society/">
+    	<img id="laflogo" alt="Redirect to Fleck page" src="img/Fleck Logo.png">
+    </a>
 </body>
 </html>
