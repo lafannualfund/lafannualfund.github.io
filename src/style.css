@@ -6,7 +6,10 @@
 	font-family: "Whitney Bold";
 	src: url("../misc/Whitney Bold.ttf") format("truetype");
 }
-
+@font-face{
+	font-family: "Unica One";
+	src: url("../misc/UnicaOne-Regular.ttf") format("truetype");
+}
 #heading{
 	font-family: "Whitney";
 	color: white;

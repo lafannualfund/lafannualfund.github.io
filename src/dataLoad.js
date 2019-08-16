@@ -77,8 +77,8 @@ function processDisplay(evt){
 		document.getElementById('brickLname').innerHTML = "Name";
 		document.getElementById('brickYear').innerHTML = "Here";
 		document.getElementById('brickRender').style.display = "initial";
-		document.getElementById('directions').innerHTML = "Brick not found.";
-		document.getElementById('contact').innerHTML = "Our records indicate that your support is not yet recognized with a brick on the Quad. Please visit the <a target='_blank' href='https://development.lafayette.edu/donor-recognition/fleck-consistent-giving-society/' style='color: inherit;'>Fleck Society homepage</a> for information on how you may qualify for this recognition, and please contact the Lafayette College Annual Fund if you would like more information about your progress to earn a brick, your donor status and detailed giving history. You may call us at <a target='_blank' href='tel:(610)330-5034' style='color: inherit;'>(610)330-5034</a>, or email us at <a target='_blank' href='mailto:fund@lafayette.edu' style='color: inherit;'>fund@lafayette.edu.</a> Thank you!";
+		document.getElementById('directions').innerHTML = "Our records indicate that your support is not yet recognized with a brick on the Quad. Please visit the <a target='_blank' href='https://development.lafayette.edu/donor-recognition/fleck-consistent-giving-society/' style='color: inherit;'>Fleck Society homepage</a> for information on how you may qualify for this recognition, and please contact the Lafayette College Annual Fund if you would like more information about your progress to earn a brick, your donor status and detailed giving history. You may call us at <a target='_blank' href='tel:(610)330-5034' style='color: inherit;'>(610)330-5034</a>, or email us at <a target='_blank' href='mailto:fund@lafayette.edu' style='color: inherit;'>fund@lafayette.edu.</a> Thank you!";
+		document.getElementById('contact').innerHTML = "";
 		document.getElementById('locator').style.display = "none";
 	}
 	listBackup.forEach(function(value){
