@@ -2,12 +2,7 @@
 <html>
 <head>
 	<title>Fleck Brick Locator</title>
-	<script type="text/javascript">
-		if(screen.width <= 699){
-			document.location = "mobile.html";
-		}
-	</script>
-	<link rel="stylesheet" type="text/css" media="screen and (min-device-width:640px)" href="src/style.css">
+	<link rel="stylesheet" type="text/css" media="screen and (max-device-width:639px)" href="src/mobile.css">
 	<script type="text/javascript" src="src/dataLoad.js"></script>
 	<p id="heading">Fleck Consistent Giving Society Brick Locator</p>	
 	<form id="topsearch" autocomplete="off" onkeydown="return event.key != 'Enter'">
@@ -25,14 +20,14 @@
 	<div class="photoLayover">
 		<img id="view" src="img/campus-view.PNG" alt="Brick Map">
 		<div class="box" id="locator"></div>
-		<div class="container" id="brickRender">
-			<img class="render" id = "render" src="img/brick template.jpg">
-			<div class="centered" id ="brickFname"></div>
-			<div class="centered2" id = "brickLname"></div>
-			<div class="lower" id ="brickYear"></div>
-			<div class="directions" id="directions"></div>
-			<div class="contact" id="contact"></div>
-		</div>
+	</div>
+	<div class="container" id="brickRender">
+		<img class="render" id = "render" src="img/brick template.jpg">
+		<div class="centered" id ="brickFname"></div>
+		<div class="centered2" id = "brickLname"></div>
+		<div class="lower" id ="brickYear"></div>
+		<div class="directions" id="directions"></div>
+		<div class="contact" id="contact"></div>
 	</div>
     <script type="text/javascript">
     	readSingleFile();
