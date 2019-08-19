@@ -1,0 +1,158 @@
+@font-face{
+	font-family: Whitney;
+	src: url("../misc/Whitney-Light.otf") format("opentype");
+}
+@font-face{
+	font-family: "Whitney Bold";
+	src: url("../misc/Whitney Bold.ttf") format("truetype");
+}
+@font-face{
+	font-family: "Unica One";
+	src: url("../misc/UnicaOne-Regular.ttf") format("truetype");
+}
+#heading{
+	font-family: "Whitney";
+	color: white;
+	font-size: 36px;
+	margin-bottom: 10px;
+	margin-top: 10px;
+}
+
+#laflogo{
+	width: auto;
+	height: 10vh;
+	position: relative;
+	bottom: 40px;
+	left: 83%;
+}
+body{
+	/*background: linear-gradient(to bottom, #65001C 0%, #910029 100%)*/;
+	background: #65001C;
+	background-repeat: no-repeat;
+	max-width: 100%;
+}
+
+#searchbar{
+	padding: 5px;
+	border: 4px solid #A2998B;
+	border-radius: 8px;
+	width: 30%;
+}
+
+#brickRender{
+	display: none;
+}
+
+.box{
+	position:absolute;
+	background-size: contain;
+}
+
+.render{
+	width: 25vw;
+}
+
+.container {
+	position: absolute;
+	text-align: center;
+	color: black;
+	font-size: 3vw;
+	font-family: "Unica One";
+	width: 26%;
+}
+
+.centered {
+	position: absolute;
+	top: 25%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	white-space: nowrap; 
+}
+
+.centered2 {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	white-space: nowrap; 
+}
+
+.lower{
+	position: absolute;
+	top: 75%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.directions{
+	position: absolute;
+	word-wrap: normal;
+	top: 100%;
+	font-size: 0.5em;
+	font-family: "Whitney";
+	text-align: left;
+	padding-left: 10px;
+	color: white;
+}
+.maillink{
+	position: absolute;
+	word-wrap: normal;
+	top: 100%;
+	font-size: 0.5em;
+	font-family: "Whitney";
+	color: white;
+	text-align: left;
+	padding-left: 10px;
+}
+
+.contact{
+	position: absolute;
+	word-wrap: normal;
+	top: 210%;
+	font-size: 0.3em;
+	font-family: "Whitney";
+	color: white;
+	text-align: left;
+	padding-left: 10px;
+}
+
+.photoLayover{
+	position: relative;
+	padding-top: 5px;
+}
+
+#view{
+	height:auto;
+	width: 74%;
+	border: 4px solid #A2998B;
+	border-radius: 8px; 
+}
+
+#locator{
+	position: absolute;
+	background-color: maroon;
+	opacity: 0.5;
+	border: 5px solid red;
+	width: 5%;
+	height: 5%;
+	bottom: 8px;
+	left: 0px;
+	display: none;
+	transform: translate(rotate(0deg));
+}
+.footer{
+	text-align: center;
+	color: white;
+	font-family: "Whitney";
+}
+#credits{
+	text-align: center;
+	color: white;
+	font-family: "Whitney";
+}
+
+#info{
+	width: 1.5%;
+	height: auto;
+	transform: translate(20%, 40%);
+}

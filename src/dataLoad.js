@@ -32,13 +32,10 @@ function search(evt){
 	var userin = document.getElementById('searchbar').value.toLowerCase();
 	if(userin.length >= 1){
 		donorList.forEach(function(value){
-			if(value.lname.toLowerCase().search(userin)!= -1){
+			if(value.fullname.toLowerCase().search(userin)!= -1){
 				displayInfo(value);
 			}
-			else if(value.fname.toLowerCase().search(userin)!= -1){
-				displayInfo(value);
-			}
-			else if(value.fullname.toLowerCase().search(userin)!= -1){
+			else if(value.year.search(userin)!=-1){
 				displayInfo(value);
 			}
 		});
