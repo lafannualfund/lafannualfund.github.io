@@ -21,7 +21,7 @@
 #laflogo{
 	width: auto;
 	height: 10vh;
-	position: relative;
+	position: absolute;
 	bottom: 40px;
 	left: 50%;
 }
@@ -49,7 +49,9 @@ body{
 }
 
 .render{
-	width: 25vw;
+	width: 75vw;
+	position: absolute;
+	left:50%;
 }
 
 .container {
