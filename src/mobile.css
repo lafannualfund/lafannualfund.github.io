@@ -23,11 +23,11 @@
 	height: 10vh;
 	position: absolute;
 	bottom: 40px;
-	left: 50%;
+	left: 40%;
 }
 body{
 	/*background: linear-gradient(to bottom, #65001C 0%, #910029 100%)*/;
-	background: orange;
+	background: red;
 	background-repeat: no-repeat;
 	max-width: 100%;
 }
@@ -58,7 +58,7 @@ body{
 	position: relative;
 	text-align: center;
 	color: black;
-	font-size: 100vw;
+	font-size: 40vw;
 	font-family: "Unica One";
 	width: 99vw;
 }
@@ -89,29 +89,19 @@ body{
 .directions{
 	position: absolute;
 	word-wrap: normal;
-	top: 60%;
-	font-size: 2em;
+	top: 70%;
+	font-size: 4em;
 	font-family: "Whitney";
 	text-align: left;
 	padding-left: 10px;
 	color: white;
-}
-.maillink{
-	position: absolute;
-	word-wrap: normal;
-	top: 100%;
-	font-size: 0.5em;
-	font-family: "Whitney";
-	color: white;
-	text-align: left;
-	padding-left: 10px;
 }
 
 .contact{
 	position: absolute;
 	word-wrap: normal;
-	top: 210%;
-	font-size: 0.3em;
+	top: 130%;
+	font-size: 2em;
 	font-family: "Whitney";
 	color: white;
 	text-align: left;
@@ -146,6 +136,7 @@ body{
 	text-align: center;
 	color: white;
 	font-family: "Whitney";
+	bottom: 30px;
 }
 
 #credits{
