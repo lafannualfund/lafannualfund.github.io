@@ -27,7 +27,7 @@
 }
 body{
 	/*background: linear-gradient(to bottom, #65001C 0%, #910029 100%)*/;
-	background: darkblue;
+	background: lime;
 	background-repeat: no-repeat;
 	max-width: 100%;
 }
@@ -49,7 +49,7 @@ body{
 }
 
 .render{
-	width: 75vw;
+	width: 100vw;
 	position: absolute;
 	left:50%;
 }
@@ -60,7 +60,7 @@ body{
 	color: black;
 	font-size: 3vw;
 	font-family: "Unica One";
-	width: 26%;
+	width: 100vw;
 }
 
 .centered {
