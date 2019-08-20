@@ -27,7 +27,7 @@
 }
 body{
 	/*background: linear-gradient(to bottom, #65001C 0%, #910029 100%)*/;
-	background: red;
+	background: lightblue;
 	background-repeat: no-repeat;
 	max-width: 100%;
 }
@@ -49,18 +49,18 @@ body{
 }
 
 .render{
-	width: 100vw;
+	width: 99vw;
 	position: absolute;
-	left:50%;
 }
 
 .container {
 	position: relative;
 	text-align: center;
 	color: black;
-	font-size: 40vw;
+	font-size: 10vw;
 	font-family: "Unica One";
 	width: 99vw;
+	white-space: nowrap; 
 }
 
 .centered {
@@ -68,15 +68,13 @@ body{
 	top: 25%;
 	left: 50%;
 	transform: translate(-50%, -50%);
-	white-space: nowrap; 
 }
 
 .centered2 {
 	position: absolute;
 	top: 50%;
 	left: 50%;
-	transform: translate(-50%, -50%);
-	white-space: nowrap; 
+	transform: translate(-50%, -50%); 
 }
 
 .lower{
@@ -86,26 +84,22 @@ body{
 	transform: translate(-50%, -50%);
 }
 
-.directions{
-	position: absolute;
+.undertext{
+	position: relative;
 	word-wrap: normal;
-	top: 70%;
-	font-size: 4em;
+	padding-left: 10px;
 	font-family: "Whitney";
 	text-align: left;
-	padding-left: 10px;
 	color: white;
+}
+.directions{
+	position: absolute;
+	font-size: 4em;
 }
 
 .contact{
 	position: absolute;
-	word-wrap: normal;
-	top: 130%;
 	font-size: 2em;
-	font-family: "Whitney";
-	color: white;
-	text-align: left;
-	padding-left: 10px;
 }
 
 .photoLayover{
