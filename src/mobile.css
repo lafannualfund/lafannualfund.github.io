@@ -23,7 +23,8 @@
 	height: 10vh;
 	position: absolute;
 	bottom: 40px;
-	left: 40%;
+	left: 50%;
+	transform: translate(-50%,0);
 }
 body{
 	/*background: linear-gradient(to bottom, #65001C 0%, #910029 100%)*/;
@@ -67,21 +68,18 @@ body{
 	position: absolute;
 	top: 25%;
 	left: 50%;
-	transform: translate(-50%, -50%);
 }
 
 .centered2 {
 	position: absolute;
 	top: 50%;
 	left: 50%;
-	transform: translate(-50%, -50%); 
 }
 
 .lower{
 	position: absolute;
 	top: 75%;
 	left: 50%;
-	transform: translate(-50%, -50%);
 }
 
 .undertext{
@@ -95,11 +93,13 @@ body{
 .directions{
 	position: absolute;
 	font-size: 4em;
+	top: 100%;
 }
 
 .contact{
 	position: absolute;
 	font-size: 2em;
+	top: 150%;
 }
 
 .photoLayover{
