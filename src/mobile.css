@@ -28,7 +28,7 @@
 }
 body{
 	/*background: linear-gradient(to bottom, #65001C 0%, #910029 100%)*/;
-	background: lightblue;
+	background: #65001C;
 	background-repeat: no-repeat;
 	max-width: 100%;
 }
@@ -89,17 +89,16 @@ body{
 	font-family: "Whitney";
 	text-align: left;
 	color: white;
+	top: 100%;
 }
 .directions{
 	position: absolute;
 	font-size: 4em;
-	top: 100%;
 }
 
 .contact{
 	position: absolute;
 	font-size: 2em;
-	top: 150%;
 }
 
 .photoLayover{
