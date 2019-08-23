@@ -68,6 +68,7 @@ body{
 	font-family: "Unica One";
 	white-space: nowrap; 
 	text-align: center;
+	transform: translate(-50%, -50%)
 }
 
 .centered2 {
@@ -78,6 +79,7 @@ body{
 	font-family: "Unica One";
 	white-space: nowrap;
 	text-align: center;
+	transform: translate(-50%, -50%)
 }
 
 .lower{
@@ -88,6 +90,7 @@ body{
 	font-family: "Unica One";
 	white-space: nowrap;
 	text-align: center;
+	transform: translate(-50%, -50%)
 }
 
 .undertext{
@@ -97,8 +100,8 @@ body{
 	font-family: "Whitney";
 	text-align: left;
 	color: white;
-	top: 100%;
 }
+
 .directions{
 	position: absolute;
 	font-size: 4em;
