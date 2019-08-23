@@ -20,7 +20,7 @@
 
 body{
 	/*background: linear-gradient(to bottom, #65001C 0%, #910029 100%)*/;
-	background: blue;
+	background: green;
 	background-repeat: no-repeat;
 	max-width: 100%;
 }
@@ -60,7 +60,7 @@ body{
 	font-family: "Unica One";
 	white-space: nowrap; 
 	text-align: center;
-	transform: translate(0%, -80%);
+	transform: translate(0%, -44%);
 }
 
 #brickLname {
@@ -69,7 +69,7 @@ body{
 	font-family: "Unica One";
 	white-space: nowrap;
 	text-align: center;
-	transform: translate(0%, -50%);
+	transform: translate(0%, -33%);
 }
 
 #brickYear {
@@ -78,7 +78,7 @@ body{
 	font-family: "Unica One";
 	white-space: nowrap;
 	text-align: center;
-	transform: translate(0%, -30%);
+	transform: translate(0%, -22%);
 }
 
 .directions{
