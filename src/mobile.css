@@ -51,7 +51,7 @@ body{
 	text-align: center;
 	color: black;
 	width: 98%;
-	height: 30%;
+	height: auto;
 }
 
 #brickFname {
