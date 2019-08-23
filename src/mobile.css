@@ -28,7 +28,7 @@
 }
 body{
 	/*background: linear-gradient(to bottom, #65001C 0%, #910029 100%)*/;
-	background: pink;
+	background: blue;
 	background-repeat: no-repeat;
 	max-width: 100%;
 }
@@ -58,7 +58,7 @@ body{
 	position: relative;
 	text-align: center;
 	color: black;
-	width: 99vw;
+	width: 98%;
 	height: auto;
 }
 
@@ -95,22 +95,21 @@ body{
 	transform: translate(-50%, -50%)
 }
 
-.undertext{
-	position: relative;
+.directions{
 	word-wrap: normal;
 	padding-left: 10px;
 	font-family: "Whitney";
 	text-align: left;
 	color: white;
-}
-
-.directions{
-	position: absolute;
 	font-size: 4em;
 }
 
 .contact{
-	position: absolute;
+	word-wrap: normal;
+	padding-left: 10px;
+	font-family: "Whitney";
+	text-align: left;
+	color: white;
 	font-size: 2em;
 }
 
