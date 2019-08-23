@@ -18,17 +18,9 @@
 	margin-top: 10px;
 }
 
-#laflogo{
-	width: auto;
-	height: 10vh;
-	position: absolute;
-	bottom: 40px;
-	left: 50%;
-	transform: translate(-50%,0);
-}
 body{
 	/*background: linear-gradient(to bottom, #65001C 0%, #910029 100%)*/;
-	background: blue;
+	background: green;
 	background-repeat: no-repeat;
 	max-width: 100%;
 }
@@ -68,9 +60,7 @@ body{
 	font-family: "Unica One";
 	white-space: nowrap; 
 	text-align: center;
-	top: 25%;
-	left: 50%;
-	transform: translate(-50%, -50%);
+	transform: translate(50%, 50%);
 }
 
 #brickLname {
@@ -79,9 +69,7 @@ body{
 	font-family: "Unica One";
 	white-space: nowrap;
 	text-align: center;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
+	transform: translate(50%, 100%);
 }
 
 #brickYear {
@@ -90,9 +78,7 @@ body{
 	font-family: "Unica One";
 	white-space: nowrap;
 	text-align: center;
-	top: 75%;
-	left: 50%;
-	transform: translate(-50%, -50%);
+	transform: translate(50%, 150%);
 }
 
 .directions{
@@ -147,4 +133,13 @@ body{
 	width: 1.5%;
 	height: auto;
 	transform: translate(20%, 40%);
+}
+
+#laflogo{
+	width: auto;
+	height: 10vh;
+	position: absolute;
+	left: 50%;
+	padding-bottom: 40px;
+	transform: translate(-50%,0);
 }
