@@ -187,7 +187,7 @@ function generateDirections(pos){
 			enhanced = "The brick is located past the two trees that are situated on either side of the path";
 		}
 	}
-	result = result + leftRight + enhanced + ". Brick will be on your " + onThe + inOut + ".";
+	result = result + leftRight + enhanced + ". Brick will be on your " + onThe + inOut + ".<br>";
 	boxdraw(quadrant);
 	return result;
 }

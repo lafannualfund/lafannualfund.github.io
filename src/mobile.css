@@ -20,7 +20,7 @@
 
 body{
 	/*background: linear-gradient(to bottom, #65001C 0%, #910029 100%)*/;
-	background: orange;
+	background: purple;
 	background-repeat: no-repeat;
 	max-width: 100%;
 }
@@ -84,7 +84,7 @@ body{
 .directions{
 	word-wrap: normal;
 	padding-left: 10px;
-	padding-top: 80px;
+	padding-top: 90px;
 	font-family: "Whitney";
 	text-align: left;
 	color: white;
