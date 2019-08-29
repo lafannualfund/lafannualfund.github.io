@@ -232,7 +232,7 @@ function boxdraw(quadrant){
 	 		break;
 	 	case 6: //6: ABCD #<508 - Third Lamp to Fourth Lamp 
 	 		box.top = "92%";
-	 		if(screen.width <= 699) box.left = "26%"
+	 		if(screen.width <= 699) box.left = "25%"
 	 		else box.left = "17%";
 	 		box.width = "6%";
 	 		break;
