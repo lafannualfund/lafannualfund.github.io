@@ -60,7 +60,6 @@ body{
 	font-family: "Unica One";
 	white-space: nowrap; 
 	text-align: center;
-	transform: translate(0%, -35%);
 }
 
 #brickLname {
@@ -69,7 +68,6 @@ body{
 	font-family: "Unica One";
 	white-space: nowrap;
 	text-align: center;
-	transform: translate(0%, -30%);
 }
 
 #brickYear {
@@ -78,7 +76,6 @@ body{
 	font-family: "Unica One";
 	white-space: nowrap;
 	text-align: center;
-	transform: translate(0%, -25%);
 }
 
 .directions{
