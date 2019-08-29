@@ -20,7 +20,7 @@
 
 body{
 	/*background: linear-gradient(to bottom, #65001C 0%, #910029 100%)*/;
-	background: green;
+	background: red;
 	background-repeat: no-repeat;
 	max-width: 100%;
 }
@@ -56,29 +56,29 @@ body{
 
 #brickFname {
 	/*position: absolute;*/
-	font-size: 15vw;
+	font-size: 10vw;
 	font-family: "Unica One";
 	white-space: nowrap; 
 	text-align: center;
-	transform: translate(0%, 50%);
+	transform: translate(0%, 40%);
 }
 
 #brickLname {
 	/*position: absolute;*/
-	font-size: 15vw;
+	font-size: 10vw;
 	font-family: "Unica One";
 	white-space: nowrap;
 	text-align: center;
-	transform: translate(0%, 50%);
+	transform: translate(0%, 40%);
 }
 
 #brickYear {
 	/*position: absolute;*/
-	font-size: 15vw;
+	font-size: 10vw;
 	font-family: "Unica One";
 	white-space: nowrap;
 	text-align: center;
-	transform: translate(0%, 50%);
+	transform: translate(0%, 40%);
 }
 
 .directions{
