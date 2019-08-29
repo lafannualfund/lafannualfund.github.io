@@ -202,55 +202,65 @@ function boxdraw(quadrant){
 	switch(quadrant){
 	 	case 1: //1: ABCD #<8 - High Street to First Lamp
 	 		box.top = "92%";
-	 		box.left = "0.3%";
+	 		if(screen.width <= 699) box.left = "0.5%"
+	 		else box.left = "0.3%";
 	 		box.width = "3%";
 	 		break;
 	 	case 2: //2: ABCD #<150 - First Lamp to Second Lamp
 	 		box.top = "92%";
-	 		box.left = "4%";
+	 		if(screen.width <= 699) box.left = "8%"
+	 		else box.left = "4%";
 	 		box.width = "5%";
 	 		break;
 	 	case 3: //3: ABCD #<169 - Second Lamp to Path Start
 	 		box.top = "92%";
-	 		box.left = "10%";
+	 		if(screen.width <= 699) box.left = "16%"
+	 		else box.left = "10%";
 	 		box.width = "1%";
 	 		break;
 	 	case 4: //4: ABCD #<227 - Path Start to Path End
 	 		box.top = "92%";
-	 		box.left = "11%";
+	 		if(screen.width <= 699) box.left = "17%"
+	 		else box.left = "11%";
 	 		box.width = "2%";
 	 		break;
 	 	case 5: //5: ABCD #<327 - Path End to Third Lamp
 	 		box.top = "92%";
-	 		box.left = "13%";
+	 		if(screen.width <= 699) box.left = "20%"
+	 		else box.left = "13%";
 	 		box.width = "4%";
 	 		break;
 	 	case 6: //6: ABCD #<508 - Third Lamp to Fourth Lamp 
 	 		box.top = "92%";
-	 		box.left = "17%";
+	 		if(screen.width <= 699) box.left = "25%"
+	 		else box.left = "17%";
 	 		box.width = "6%";
 	 		break;
 	 	case 7: //7: ABCD #<690 - Fourth Lamp to Fifth Lamp
 	 		box.top = "92%";
-	 		box.left = "24%";
+	 		if(screen.width <= 699) box.left = "32%"
+	 		else box.left = "24%";
 	 		box.width = "6%";
 	 		break;
 	 	case 8: //8: ABCD #<796 - Fifth Lamp to end of Left Section
 	 		box.top = "92%";
-	 		box.left = "30%";
+	 		if(screen.width <= 699) box.left = "39%"
+	 		else box.left = "30%";
 	 		box.width = "2%"
 	 		break;
 	 	case 9: //9: ABCD #<914 - Start of Right Section to Lamp
 	 		box.top = "91%";
-	 		box.left = "45%";
+	 		if(screen.width <= 699) box.left = "57%"
+	 		else box.left = "45%";
 	 		break;
 	 	case 10: //10: ABCD #>914 - Lamp to End
 	 		box.top = "91%";
-	 		box.left = "53%";
+	 		if(screen.width <= 699) box.left = "63%"
+	 		else box.left = "53%";
 	 		break;
 	 	case 11: //11: EFGH #<115 - Start to First Lamp
 	 		box.top = "85%";
-	 		if(screen.width <= 699) box.left = "35%"
+	 		if(screen.width <= 699) box.left = "37%"
 	 		else box.left = "28%";
 	 		box.transform = "rotate(42deg)";
 	 		break;
@@ -262,13 +272,13 @@ function boxdraw(quadrant){
 	 		break;
 	 	case 13: //13: EFGH #>280 - Second Lamp to End
 	 		box.top = "60%";
-	 		if(screen.width <= 699) box.left = "33%";
+	 		if(screen.width <= 699) box.left = "32%";
 	 		else box.left = "23%";
 	 		box.transform = "rotate(78deg)";
 	 		break;
 	 	case 14: //14: IJ #<160 - Start to Two Trees
 	 		box.top = "83%";
-	 		if(screen.width <= 699) box.left = "59%";
+	 		if(screen.width <= 699) box.left = "57%";
 	 		else box.left = "42%";
 	 		box.transform = "rotate(-50deg)";
 	 		break;

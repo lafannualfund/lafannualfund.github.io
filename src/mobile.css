@@ -20,7 +20,7 @@
 
 body{
 	/*background: linear-gradient(to bottom, #65001C 0%, #910029 100%)*/;
-	background: red;
+	background: blue;
 	background-repeat: no-repeat;
 	max-width: 100%;
 }
