@@ -250,28 +250,33 @@ function boxdraw(quadrant){
 	 		break;
 	 	case 11: //11: EFGH #<115 - Start to First Lamp
 	 		box.top = "85%";
-	 		box.left = "28%";
+	 		if(screen.width <= 699) box.left = "41%"
+	 		else box.left = "28%";
 	 		box.transform = "rotate(42deg)";
 	 		break;
 	 	case 12: //12: EFGH #<280 - First Lamp to Second Lamp
 	 		box.top = "74%";
-	 		box.left = "25%";
+	 		if(screen.width <= 699) box.left = "39%";
+	 		else box.left = "25%";
 	 		box.transform = "rotate(70deg)";
 	 		break;
 	 	case 13: //13: EFGH #>280 - Second Lamp to End
 	 		box.top = "60%";
-	 		box.left = "23%";
+	 		if(screen.width <= 699) box.left = "37%";
+	 		else box.left = "23%";
 	 		box.transform = "rotate(78deg)";
 	 		break;
 	 	case 14: //14: IJ #<160 - Start to Two Trees
 	 		box.top = "83%";
-	 		box.left = "42%";
+	 		if(screen.width <= 699) box.left = "61%";
+	 		else box.left = "42%";
 	 		box.transform = "rotate(-50deg)";
 	 		break;
 	 	case 15: //15: IJ #>160 - Two Trees to End
 	 		//box.transform = "translate(815%,-350%) rotate(-60deg)";
 	 		box.top = "66%";
-	 		box.left = "46%";
+	 		if(screen.width <= 699) box.left = "65%";
+	 		else box.left = "46%";
 	 		box.transform = "rotate(-60deg)";
 	 		break;
 	 	default: 
