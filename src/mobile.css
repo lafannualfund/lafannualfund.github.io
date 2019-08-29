@@ -56,29 +56,29 @@ body{
 
 #brickFname {
 	/*position: absolute;*/
-	font-size: 10vw;
+	font-size: 15vw;
 	font-family: "Unica One";
 	white-space: nowrap; 
 	text-align: center;
-	transform: translate(0%, 35%);
+	transform: translate(0%, 50%);
 }
 
 #brickLname {
 	/*position: absolute;*/
-	font-size: 10vw;
+	font-size: 15vw;
 	font-family: "Unica One";
 	white-space: nowrap;
 	text-align: center;
-	transform: translate(0%, 35%);
+	transform: translate(0%, 50%);
 }
 
 #brickYear {
 	/*position: absolute;*/
-	font-size: 10vw;
+	font-size: 15vw;
 	font-family: "Unica One";
 	white-space: nowrap;
 	text-align: center;
-	transform: translate(0%, 35%);
+	transform: translate(0%, 50%);
 }
 
 .directions{

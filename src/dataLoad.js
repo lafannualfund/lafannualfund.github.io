@@ -86,7 +86,7 @@ function processDisplay(evt){
 			document.getElementById('brickRender').style.display = "initial";
 			var dir = generateDirections(value.pos);
 			document.getElementById('directions').innerHTML = dir;
-			document.getElementById('contact').innerHTML = "Thank you for being a consistent donor to Lafayette! The College's fiscal year runs from July 1 to June 30 each year. If you have not yet renewed your support, then please <a target='_blank' href='https://securelb.imodules.com/s/1699/interior.aspx?sid=1699&gid=2&pgid=446&cid=1122&appealcode=fleckwebhome' style='color: inherit;'>click here </a>to make your gift today!<br><br>Contact the Lafayette College Annual Fund with any questions about your giving history, current giving status, or with any other questions you may have about the impact of your support. We can also take your contribution over the phone. Call us at <a target='_blank' href='tel:(610)330-5034' style='color: inherit;'>(610)330-5034</a>, or email us at <a target='_blank' href='mailto:fund@lafayette.edu' style='color: inherit;'>fund@lafayette.edu</a>. Thank you!";
+			document.getElementById('contact').innerHTML = "Thank you for being a consistent donor to Lafayette! The College's fiscal year runs from July 1 to June 30 each year. If you have not yet renewed your support, then please <a target='_blank' href='https://securelb.imodules.com/s/1699/interior.aspx?sid=1699&gid=2&pgid=446&cid=1122&appealcode=fleckwebhome' style='color: inherit;'>click here </a>to make your gift today!<br><br>Contact the Lafayette College Annual Fund with any questions about your giving history, current giving status, or with any other questions you may have about the impact of your support. We can also take your contribution over the phone. Call us at <a target='_blank' href='tel:(610)330-5034' style='color: inherit;'>(610)330-5034</a>, or email us at <a target='_blank' href='mailto:fund@lafayette.edu' style='color: inherit;'>fund@lafayette.edu</a>. Thank you!<br>";
 
 			return;
 		}
@@ -250,32 +250,32 @@ function boxdraw(quadrant){
 	 		break;
 	 	case 11: //11: EFGH #<115 - Start to First Lamp
 	 		box.top = "85%";
-	 		if(screen.width <= 699) box.left = "41%"
+	 		if(screen.width <= 699) box.left = "35%"
 	 		else box.left = "28%";
 	 		box.transform = "rotate(42deg)";
 	 		break;
 	 	case 12: //12: EFGH #<280 - First Lamp to Second Lamp
 	 		box.top = "74%";
-	 		if(screen.width <= 699) box.left = "39%";
+	 		if(screen.width <= 699) box.left = "34%";
 	 		else box.left = "25%";
 	 		box.transform = "rotate(70deg)";
 	 		break;
 	 	case 13: //13: EFGH #>280 - Second Lamp to End
 	 		box.top = "60%";
-	 		if(screen.width <= 699) box.left = "37%";
+	 		if(screen.width <= 699) box.left = "33%";
 	 		else box.left = "23%";
 	 		box.transform = "rotate(78deg)";
 	 		break;
 	 	case 14: //14: IJ #<160 - Start to Two Trees
 	 		box.top = "83%";
-	 		if(screen.width <= 699) box.left = "61%";
+	 		if(screen.width <= 699) box.left = "59%";
 	 		else box.left = "42%";
 	 		box.transform = "rotate(-50deg)";
 	 		break;
 	 	case 15: //15: IJ #>160 - Two Trees to End
 	 		//box.transform = "translate(815%,-350%) rotate(-60deg)";
 	 		box.top = "66%";
-	 		if(screen.width <= 699) box.left = "65%";
+	 		if(screen.width <= 699) box.left = "62%";
 	 		else box.left = "46%";
 	 		box.transform = "rotate(-60deg)";
 	 		break;
