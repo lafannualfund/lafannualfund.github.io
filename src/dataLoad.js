@@ -214,25 +214,25 @@ function boxdraw(quadrant){
 	 		break;
 	 	case 3: //3: ABCD #<169 - Second Lamp to Path Start
 	 		box.top = "92%";
-	 		if(screen.width <= 699) box.left = "16%"
+	 		if(screen.width <= 699) box.left = "15%"
 	 		else box.left = "10%";
 	 		box.width = "1%";
 	 		break;
 	 	case 4: //4: ABCD #<227 - Path Start to Path End
 	 		box.top = "92%";
-	 		if(screen.width <= 699) box.left = "17%"
+	 		if(screen.width <= 699) box.left = "16%"
 	 		else box.left = "11%";
 	 		box.width = "2%";
 	 		break;
 	 	case 5: //5: ABCD #<327 - Path End to Third Lamp
 	 		box.top = "92%";
-	 		if(screen.width <= 699) box.left = "20%"
+	 		if(screen.width <= 699) box.left = "19%"
 	 		else box.left = "13%";
 	 		box.width = "4%";
 	 		break;
 	 	case 6: //6: ABCD #<508 - Third Lamp to Fourth Lamp 
 	 		box.top = "92%";
-	 		if(screen.width <= 699) box.left = "25%"
+	 		if(screen.width <= 699) box.left = "26%"
 	 		else box.left = "17%";
 	 		box.width = "6%";
 	 		break;
@@ -244,7 +244,7 @@ function boxdraw(quadrant){
 	 		break;
 	 	case 8: //8: ABCD #<796 - Fifth Lamp to end of Left Section
 	 		box.top = "92%";
-	 		if(screen.width <= 699) box.left = "39%"
+	 		if(screen.width <= 699) box.left = "40%"
 	 		else box.left = "30%";
 	 		box.width = "2%"
 	 		break;
@@ -255,7 +255,7 @@ function boxdraw(quadrant){
 	 		break;
 	 	case 10: //10: ABCD #>914 - Lamp to End
 	 		box.top = "91%";
-	 		if(screen.width <= 699) box.left = "63%"
+	 		if(screen.width <= 699) box.left = "67%"
 	 		else box.left = "53%";
 	 		break;
 	 	case 11: //11: EFGH #<115 - Start to First Lamp
