@@ -130,12 +130,6 @@ body{
 	font-family: "Whitney";
 }
 
-#info{
-	width: 1.5%;
-	height: auto;
-	transform: translate(20%, 40%);
-}
-
 #laflogo{
 	width: auto;
 	height: 10vh;
@@ -145,15 +139,21 @@ body{
 	transform: translate(-50%,0);
 }
 
+#info{
+	width: 5%;
+	height: auto;
+	transform: translate(20%, 40%);
+}
+
 .tooltip {
   position: relative;
   display: inline-block;
-  border-bottom: 1px dotted black;
+  width: 400px;
 }
 
 .tooltip .tooltiptext {
   visibility: hidden;
-  width: 120px;
+  width: 400px;
   background-color: black;
   color: #fff;
   text-align: center;
