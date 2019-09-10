@@ -8,6 +8,8 @@
 		}
 	</script>
 	<link rel="stylesheet" type="text/css" media="screen and (min-device-width:640px)" href="src/style.css">
+	<link type="text/csv" href="https://github.com/elast27/elast27.github.io/blob/master/dat/FY19%20Final%20Brick%20List.csv">
+	<script id="data" type="text/csv" src="dat/FY19 Final Brick List.csv"></script>
 	<script type="text/javascript" src="src/dataLoad.js"></script>
 	<p id="heading">Fleck Consistent Giving Society Brick Locator</p>	
 	<form id="topsearch" autocomplete="off" onkeydown="return event.key != 'Enter'">
@@ -24,6 +26,8 @@
 <body>
 	<div class="photoLayover">
 		<img id="view" src="img/campus-view.PNG" alt="Brick Map">
+		<button id="imgButton" class="btn" onclick="imgSwitch()"><img id="iconPic" src="img/iconPic.png"></button>
+		<button id="mapButton" class="btn2" onclick="mapSwitch()"><img id="iconMap" src="img/iconMap.png"></button>
 		<div class="box" id="locator"></div>
 		<div class="container" id="brickRender">
 			<img class="render" id = "render" src="img/brick template.jpg">
@@ -35,7 +39,7 @@
 		</div>
 	</div>
     <script type="text/javascript">
-    	readSingleFile();
+    	window.onload = readSingleFile;
     	document.getElementById('searchbar').addEventListener('keyup', search, false);
     </script>
     <div class="footer"> Lafayette College Annual Fund</div>

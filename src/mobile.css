@@ -168,3 +168,36 @@ body{
 .tooltip:hover .tooltiptext {
   visibility: visible;
 }
+
+.btn{
+	visibility: hidden;
+	position: absolute;
+	top: 2%;
+	right: 26%;
+	width: 48px;
+	height: 48px;
+}
+.btn2{
+	visibility: hidden;
+	position: absolute;
+	top: 2%;
+	right: 29.4%;
+	width: 48px;
+	height: 48px;
+}
+
+#iconPic{
+	height: 2.5em;
+}
+
+#iconMap{
+	height: 2.5em;
+}
+
+.btn:hover {
+  background-color: #999;
+}
+
+.btn2:hover{
+  background-color: #999;
+}
