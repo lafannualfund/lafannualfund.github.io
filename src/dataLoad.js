@@ -80,6 +80,8 @@ function processDisplay(evt){
 		document.getElementById('directions').innerHTML = "Our records indicate that your support is not yet recognized with a brick on the Quad. Please visit the <a target='_blank' href='https://development.lafayette.edu/donor-recognition/fleck-consistent-giving-society/' style='color: inherit;'>Fleck Society homepage</a> for information on how you may qualify for this recognition, and please contact the Lafayette College Annual Fund if you would like more information about your progress to earn a brick, your donor status and detailed giving history. You may call us at <a target='_blank' href='tel:(610)330-5034' style='color: inherit;'>(610)330-5034</a>, or email us at <a target='_blank' href='mailto:fund@lafayette.edu' style='color: inherit;'>fund@lafayette.edu.</a> Thank you!";
 		document.getElementById('contact').innerHTML = "";
 		document.getElementById('locator').style.display = "none";
+		document.getElementById('imgButton').style.visibility = "hidden"
+		document.getElementById('mapButton').style.visibility = "hidden"
 	}
 	listBackup.forEach(function(value){
 		if(value.pos === proVal){
@@ -111,6 +113,9 @@ function generateDirections(pos){
 	if(row >= '0' && row <= '9'){
 		console.log("made it");
 		result = "Your brick has been ordered, however it is not currently in the ground. Please check back in a few weeks. If you believe this is a mistake, please use any of the links below to contact us."
+		document.getElementById('imgButton').style.visibility = "hidden"
+		document.getElementById('mapButton').style.visibility = "hidden"
+		document.getElementById('locator').style.visibility = "hidden";
 		return result;
 	}
 	//Directions count light poles from the steps of Skillman Library
