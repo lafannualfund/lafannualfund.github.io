@@ -214,3 +214,7 @@ body{
 .btn2:hover{
   background-color: #999;
 }
+
+h6{
+	text-align: right;
+}
