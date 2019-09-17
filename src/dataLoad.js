@@ -210,35 +210,35 @@ function boxdraw(quadrant){
 	 		if(screen.width <= 699) box.left = "0.5%"
 	 		else box.left = "0.3%";
 	 		box.width = "3%";
-	 		img = "img/view1.jpg";
+	 		img = "nav/q1.html";
 	 		break;
 	 	case 2: //2: ABCD #<150 - First Lamp to Second Lamp
 	 		box.top = "92%";
 	 		if(screen.width <= 699) box.left = "8%"
 	 		else box.left = "4%";
 	 		box.width = "5%";
-	 		img = "img/view2.jpg";
+	 		img = "nav/q2.html";
 	 		break;
 	 	case 3: //3: ABCD #<169 - Second Lamp to Path Start
 	 		box.top = "92%";
 	 		if(screen.width <= 699) box.left = "15%"
 	 		else box.left = "10%";
 	 		box.width = "1%";
-	 		img = "img/view3.jpg";
+	 		img = "nav/q3-4.html";
 	 		break;
 	 	case 4: //4: ABCD #<227 - Path Start to Path End
 	 		box.top = "92%";
 	 		if(screen.width <= 699) box.left = "16%"
 	 		else box.left = "11%";
 	 		box.width = "2%";
-	 		img = "img/view4.jpg";
+	 		img = "nav/q3-4.html";
 	 		break;
 	 	case 5: //5: ABCD #<327 - Path End to Third Lamp
 	 		box.top = "92%";
 	 		if(screen.width <= 699) box.left = "19%"
 	 		else box.left = "13%";
 	 		box.width = "4%";
-	 		img = "img/view5.jpg";
+	 		img = "nav/q5.html";
 	 		break;
 	 	case 6: //6: ABCD #<508 - Third Lamp to Fourth Lamp 
 	 		box.top = "92%";
@@ -319,7 +319,11 @@ function boxdraw(quadrant){
 	 }
 }
 
-function imgSwitch(){
-	document.getElementById("locator").style.display = "none";
-	document.getElementById("view").src = img;
+function getQuadrant(){
+	return img;
 }
+
+// function imgSwitch(){
+// 	document.getElementById("locator").style.display = "none";
+// 	document.getElementById("view").src = img;
+// }

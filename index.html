@@ -29,7 +29,8 @@
 		<button id="imgButton" class="btn"><img id="iconPic" src="img/iconPic.png"></button>
 		<script type="text/javascript">
 			document.getElementById('imgButton').onclick= function(){
-				window.open('nav/360test.html','_blank');
+				var q = getQuadrant();
+				window.open(q,'_blank');
 			};
 		</script>
 		<div class="box" id="locator"></div>
