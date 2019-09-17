@@ -188,6 +188,7 @@ body{
 	right: 26%;
 	width: 3.5vw;
 	height: 3.5vw;
+	border-radius: 8px;
 }
 .btn2{
 	visibility: hidden;
@@ -200,7 +201,6 @@ body{
 
 #iconPic{
 	height: 80%;
-
 }
 
 #iconMap{

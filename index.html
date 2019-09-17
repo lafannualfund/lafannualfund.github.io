@@ -26,8 +26,12 @@
 <body>
 	<div class="photoLayover">
 		<img id="view" src="img/campus-view.PNG" alt="Brick Map">
-		<button id="imgButton" class="btn" onclick="imgSwitch()"><img id="iconPic" src="img/iconPic.png"></button>
-		<button id="mapButton" class="btn2" onclick="mapSwitch()"><img id="iconMap" src="img/iconMap.png"></button>
+		<button id="imgButton" class="btn"><img id="iconPic" src="img/iconPic.png"></button>
+		<script type="text/javascript">
+			document.getElementById('imgButton').onclick= function(){
+				window.open('nav/360test.html','_blank');
+			};
+		</script>
 		<div class="box" id="locator"></div>
 		<div class="container" id="brickRender">
 			<img class="render" id = "render" src="img/brick template.jpg">
