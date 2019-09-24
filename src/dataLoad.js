@@ -107,8 +107,9 @@ function generateDirections(pos){
 	var leftRight;
 	var enhanced;
 	var quadrant;
+	var panoview;
 	if(row >= '0' && row <= '9'){
-		result = "Your brick has been ordered, however it is not currently in the ground. The box displayed shows the area in which your brick will be placed. Please check back in a few weeks. If you believe this is a mistake, please use any of the links below to contact us."
+		result = "Your brick has been ordered, however it is not currently in the ground. The box displayed shows the area in which your brick will be placed. <a href='nav/q16.html' target='_blank' style='color: inherit;'>Click here</a> for a 360 view from that area. Please check back in a few weeks for an update. If you believe this is a mistake, please use any of the links below to contact us."
 		document.getElementById('imgButton').style.visibility = "hidden"
 		boxdraw(16);
 		return result;
@@ -124,27 +125,35 @@ function generateDirections(pos){
 			if(num< 8) {
 				quadrant = 1;
 				enhanced = "Continue all the way down, close to High Street. The brick is located between the road and the light pole";
+				panoview = "<a href='nav/q1.html' target='_blank' style='color: inherit;'>Click here</a> for a 360 view from the location of your brick!"
 			} else if(num< 150){
 				quadrant = 2;
 				enhanced = "Continue past four light poles. The brick is located between the fourth and fifth light pole";
+				panoview = "<a href='nav/q2.html' target='_blank' style='color: inherit;'>Click here</a> for a 360 view from the location of your brick!"
 			} else if(num< 169){
 				quadrant = 3;
 				enhanced = "Continue until you reach the intersecting path. The brick is located between the end of the path and the next light pole";
+				panoview = "<a href='nav/q3-4.html' target='_blank' style='color: inherit;'>Click here</a> for a 360 view from the location of your brick!"
 			} else if(num< 227){
 				quadrant = 4;
 				enhanced = "Continue until you reach the intersecting path. The brick is located directly upon the intersection";
+				panoview = "<a href='nav/q3-4.html' target='_blank' style='color: inherit;'>Click here</a> for a 360 view from the location of your brick!"
 			} else if(num< 327) {
 				quadrant = 5;
 				enhanced = "Continue past three light poles. The brick is located between the third light pole and the intersecting path";
+				panoview = "<a href='nav/q5.html' target='_blank' style='color: inherit;'>Click here</a> for a 360 view from the location of your brick!"
 			} else if(num< 508) {
 				quadrant = 6;
 				enhanced = "Continue past two light poles. The brick is located between the second and third light pole";
+				panoview = "<a href='nav/q6.html' target='_blank' style='color: inherit;'>Click here</a> for a 360 view from the location of your brick!"
 			} else if(num< 690) {
 				quadrant = 7;
 				enhanced = "Continue to the first light pole. The brick is located between the first and second light pole";
+				panoview = "<a href='nav/q7.html' target='_blank' style='color: inherit;'>Click here</a> for a 360 view from the location of your brick!"
 			} else {
 				quadrant = 8;
 				enhanced = "The brick is located before the first light pole";
+				panoview = "<a href='nav/q8.html' target='_blank' style='color: inherit;'>Click here</a> for a 360 view from the location of your brick!"
 			}
 		} else {
 			if(row ===  'A' || row === 'B') onThe = "left, ";
@@ -153,9 +162,11 @@ function generateDirections(pos){
 		 	if(num< 914) {
 		 		quadrant = 9;
 		 		enhanced = "The brick is located before the first light pole";
+		 		panoview = "<a href='nav/q9.html' target='_blank' style='color: inherit;'>Click here</a> for a 360 view from the location of your brick!"
 		 	} else {
 		 		quadrant = 10;
 		 		enhanced = "The brick is located between the light pole and the end of the straight path";
+		 		panoview = "<a href='nav/q10.html' target='_blank' style='color: inherit;'>Click here</a> for a 360 view from the location of your brick!"
 		 	}
 		}
 		
@@ -169,12 +180,15 @@ function generateDirections(pos){
 		if(num< 115) {
 			quadrant = 11;
 			enhanced = "The brick is located between the first two light poles";
+			panoview = "<a href='nav/q11.html' target='_blank' style='color: inherit;'>Click here</a> for a 360 view from the location of your brick!"
 		} else if(num< 280) {
 			quadrant = 12;
 			enhanced = "Continue past the second light pole on your left. The brick is located between the second and third light pole";
+			panoview = "<a href='nav/q12.html' target='_blank' style='color: inherit;'>Click here</a> for a 360 view from the location of your brick!"
 		} else {
 			quadrant = 13;
 			enhanced = "Continue past the third light pole on your left. The brick is located between the third light pole and the path that goes past Kirby House";
+			panoview = "<a href='nav/q13.html' target='_blank' style='color: inherit;'>Click here</a> for a 360 view from the location of your brick!"
 		}
 	}
 	else{
@@ -185,12 +199,14 @@ function generateDirections(pos){
 		if(num< 160) {
 			quadrant = 14;
 			enhanced = "The brick is located before the two trees that are situated on either side of the path";
+			panoview = "<a href='nav/q14.html' target='_blank' style='color: inherit;'>Click here</a> for a 360 view from the location of your brick!"
 		} else {
 			quadrant = 15;
 			enhanced = "The brick is located past the two trees that are situated on either side of the path";
+			panoview = "<a href='nav/q15.html' target='_blank' style='color: inherit;'>Click here</a> for a 360 view from the location of your brick!"
 		}
 	}
-	result = result + leftRight + enhanced + ". Brick will be on your " + onThe + inOut + ".<br>";
+	result = result + leftRight + enhanced + ". Brick will be on your " + onThe + inOut + ". "+ panoview +"<br>";
 	boxdraw(quadrant);
 	return result;
 }
