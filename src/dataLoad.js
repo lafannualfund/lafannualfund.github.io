@@ -245,75 +245,75 @@ function boxdraw(quadrant){
 	 		if(screen.width <= 699) box.left = "25%"
 	 		else box.left = "17%";
 	 		box.width = "6%";
-	 		img = "img/view6.jpg";
+	 		img = "nav/q6.html";
 	 		break;
 	 	case 7: //7: ABCD #<690 - Fourth Lamp to Fifth Lamp
 	 		box.top = "92%";
 	 		if(screen.width <= 699) box.left = "32%"
 	 		else box.left = "24%";
 	 		box.width = "6%";
-	 		img = "img/view7.jpg";
+	 		img = "nav/q7.html";
 	 		break;
 	 	case 8: //8: ABCD #<796 - Fifth Lamp to end of Left Section
 	 		box.top = "92%";
 	 		if(screen.width <= 699) box.left = "40%"
 	 		else box.left = "30%";
 	 		box.width = "2%"
-	 		img = "img/view8.jpg";
+	 		img = "nav/q8.html";
 	 		break;
 	 	case 9: //9: ABCD #<914 - Start of Right Section to Lamp
 	 		box.top = "91%";
 	 		if(screen.width <= 699) box.left = "57%"
 	 		else box.left = "45%";
-	 		img = "img/view9.jpg";
+	 		img = "nav/q9.html";
 	 		break;
 	 	case 10: //10: ABCD #>914 - Lamp to End
 	 		box.top = "91%";
 	 		if(screen.width <= 699) box.left = "67%"
 	 		else box.left = "53%";
-	 		img = "img/view10.jpg";
+	 		img = "nav/q10.html";
 	 		break;
 	 	case 11: //11: EFGH #<115 - Start to First Lamp
 	 		box.top = "85%";
 	 		if(screen.width <= 699) box.left = "37%"
 	 		else box.left = "28%";
 	 		box.transform = "rotate(42deg)";
-	 		img = "img/view11.jpg";
+	 		img = "nav/q11.html";
 	 		break;
 	 	case 12: //12: EFGH #<280 - First Lamp to Second Lamp
 	 		box.top = "74%";
 	 		if(screen.width <= 699) box.left = "34%";
 	 		else box.left = "25%";
 	 		box.transform = "rotate(70deg)";
-	 		img = "img/view12.jpg";
+	 		img = "nav/q12.html";
 	 		break;
 	 	case 13: //13: EFGH #>280 - Second Lamp to End
 	 		box.top = "60%";
 	 		if(screen.width <= 699) box.left = "32%";
 	 		else box.left = "23%";
 	 		box.transform = "rotate(78deg)";
-	 		img = "img/view13.jpg";
+	 		img = "nav/q13.html";
 	 		break;
 	 	case 14: //14: IJ #<160 - Start to Two Trees
 	 		box.top = "83%";
 	 		if(screen.width <= 699) box.left = "57%";
 	 		else box.left = "42%";
 	 		box.transform = "rotate(-50deg)";
-	 		img = "img/view14.jpg";
+	 		img = "nav/q14.html";
 	 		break;
 	 	case 15: //15: IJ #>160 - Two Trees to End
 	 		box.top = "66%";
 	 		if(screen.width <= 699) box.left = "62%";
 	 		else box.left = "46%";
 	 		box.transform = "rotate(-60deg)";
-	 		img = "img/view15.jpg";
+	 		img = "nav/q15.html";
 	 		break;
 	 	case 16: //New bricks Fall 2019
 	 		box.top = "41%";
 	 		if(screen.width <= 699) box.left = "32%";
 	 		else box.left = "22%";
 	 		box.transform = "rotate(93deg)";
-	 		img = "img/view13.jpg";
+	 		img = "nav/q16.html";
 	 		break;
 	 	default: 
 	 }
