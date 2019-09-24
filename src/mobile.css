@@ -148,7 +148,7 @@ body{
 .tooltip {
   position: relative;
   display: inline-block;
-  width: 300px;
+  width: 200px;
 }
 
 .tooltip .tooltiptext {
@@ -173,15 +173,7 @@ body{
 	visibility: hidden;
 	position: absolute;
 	top: 2%;
-	right: 26%;
-	width: 48px;
-	height: 48px;
-}
-.btn2{
-	visibility: hidden;
-	position: absolute;
-	top: 2%;
-	right: 29.4%;
+	right: 2%;
 	width: 48px;
 	height: 48px;
 }
@@ -190,14 +182,6 @@ body{
 	height: 2.5em;
 }
 
-#iconMap{
-	height: 2.5em;
-}
-
 .btn:hover {
-  background-color: #999;
-}
-
-.btn2:hover{
   background-color: #999;
 }
