@@ -1,27 +1,29 @@
 <!DOCTYPE html>
 <html>
 <head>
+
+	<title>Fleck Brick Locator</title>
+
 	<!-- Global site tag (gtag.js) - Google Analytics -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-148343924-2"></script>
 	<script>
 	  window.dataLayer = window.dataLayer || [];
 	  function gtag(){dataLayer.push(arguments);}
 	  gtag('js', new Date());
-
 	  gtag('config', 'UA-148343924-2');
 	</script>
 
-	<title>Fleck Brick Locator</title>
+	<!--This script redirects to the mobile platform based on screen width-->
 	<script type="text/javascript">
 		if(screen.width <= 699){
 			document.location = "mobile.html";
 		}
 	</script>
+
 	<link rel="stylesheet" type="text/css" media="screen and (min-device-width:640px)" href="src/style.css">
-	<link type="text/csv" href="https://github.com/elast27/elast27.github.io/blob/master/dat/FY19%20Final%20Brick%20List.csv">
-	<script id="data" type="text/csv" src="dat/FY19 Final Brick List.csv"></script>
 	<script type="text/javascript" src="src/dataLoad.js"></script>
-	<p id="heading">Fleck Consistent Giving Society Brick Locator</p>	
+	<p id="heading">Fleck Consistent Giving Society Brick Locator</p>
+	<!--This form includes the searchbar, dropdown menu, Go button, and info hoverable-->
 	<form id="topsearch" autocomplete="off" onkeydown="return event.key != 'Enter'">
 		<div class="dropdown">
 			<input type="search" name="searchbar" id="searchbar" placeholder="Search for a Brick by First Name, Last Name, or Class Year">
@@ -34,10 +36,12 @@
 	</form>
 </head>
 <body>
+	<!--photoLayover includes the campus view, button to launch 360, the locator box, and the brick render. This is so that the brick can be rendered along side of the view-->
 	<div class="photoLayover">
 		<img id="view" src="img/campus-view.PNG" alt="Brick Map">
 		<button id="imgButton" class="btn"><img id="iconPic" src="img/iconPic.png"></button>
 		<script type="text/javascript">
+			//Decides which 360 image to pull
 			document.getElementById('imgButton').onclick= function(){
 				var q = getQuadrant();
 				window.open(q,'_blank');
@@ -53,6 +57,7 @@
 			<div class="contact" id="contact"></div>
 		</div>
 	</div>
+	<!--This script loads all of the names into the backend. The keyup listener filters out the search results-->
     <script type="text/javascript">
     	window.onload = readSingleFile;
     	document.getElementById('searchbar').addEventListener('keyup', search, false);
@@ -63,6 +68,6 @@
     <a target='_blank' href="https://development.lafayette.edu/donor-recognition/fleck-consistent-giving-society/">
     	<img id="laflogo" alt="Redirect to Fleck page" src="img/Fleck Logo.png">
     </a>
-    <h6>Last updated: 9/19/2019 9:25am</h6>
+    <h6>Last updated: 10/3/2019 9:25am</h6>
 </body>
 </html>
