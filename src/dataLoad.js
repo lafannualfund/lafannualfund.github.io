@@ -119,7 +119,7 @@ function generateDirections(pos){
 	var quadrant;
 	var panoview;
 	if(row >= '0' && row <= '9'){
-		result = "Your brick has been ordered, however it is not currently in the ground. The box displayed shows the area in which your brick will be placed. <a href='nav/q16.html' target='_blank' style='color: inherit;'>Click here</a> for a 360 view from that area. Please check back in a few weeks for an update. If you believe this is a mistake, please use any of the links below to contact us."
+		result = "From the steps of Skillman Library, walk left and down the curved path towards Kirby House. Continue past three light poles. Check back in a few weeks for more specific directions once your brick is installed. <a href='nav/q16.html' target='_blank' style='color: inherit;'>Click here</a> for a 360 view from the location of your brick!";
 		document.getElementById('imgButton').style.visibility = "hidden"
 		boxdraw(16);
 		return result;
