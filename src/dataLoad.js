@@ -118,12 +118,6 @@ function generateDirections(pos){
 	var enhanced;
 	var quadrant;
 	var panoview;
-	if(row >= '0' && row <= '9'){
-		result = "From the steps of Skillman Library, walk left and down the curved path towards Kirby House. Continue past three light poles. Check back in a few weeks for more specific directions once your brick is installed. <a href='nav/q16.html' target='_blank' style='color: inherit;'>Click here</a> for a 360 view from the location of your brick!";
-		document.getElementById('imgButton').style.visibility = "hidden"
-		boxdraw(16);
-		return result;
-	}
 	//Directions count light poles from the steps of Skillman Library
 	if(row === 'A' || row === 'B' || row === 'C' || row === 'D' ){
 		if(row === 'A' || row === 'D') inOut = "outer row";
@@ -195,10 +189,14 @@ function generateDirections(pos){
 			quadrant = 12;
 			enhanced = "Continue past the second light pole on your left. The brick is located between the second and third light pole";
 			panoview = "<a href='nav/q12.html' target='_blank' style='color: inherit;'>Click here</a> for a 360 view from the location of your brick!"
-		} else {
+		} else if(num< 407){
 			quadrant = 13;
 			enhanced = "Continue past the third light pole on your left. The brick is located between the third light pole and the path that goes past Kirby House";
 			panoview = "<a href='nav/q13.html' target='_blank' style='color: inherit;'>Click here</a> for a 360 view from the location of your brick!"
+		} else{
+			quadrant = 16;
+			enhanced = "Continue past three light poles on your left. The brick is located past the third light pole"
+			panoview = "<a href='nav/q16.html' target='_blank' style='color: inherit;'>Click here</a> for a 360 view from the location of your brick!"
 		}
 	}
 	else{
